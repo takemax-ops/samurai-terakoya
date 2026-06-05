@@ -1,0 +1,62 @@
+PS C:\Users\河野\TEST> mkdir git_challenge                  
+                   
+           
+    ディレクトリ: C:\Users\河野\TEST
+
+
+Mode                 LastWriteTime         Length Name                          
+----                 -------------         ------ ----                          
+d-----        2026/06/04     17:06                git_challenge                 
+
+
+PS C:\Users\河野\TEST> cd git_challenge
+PS C:\Users\河野\TEST\git_challenge> git init
+Initialized empty Git repository in C:/Users/河野/TEST/git_challenge/.git/
+PS C:\Users\河野\TEST\git_challenge> New-Item hello_world.txt -ItemType File
+
+
+    ディレクトリ: C:\Users\河野\TEST\git_challenge
+
+
+Mode                 LastWriteTime         Length Name                          
+----                 -------------         ------ ----                          
+-a----        2026/06/04     17:07              0 hello_world.txt               
+
+
+PS C:\Users\河野\TEST\git_challenge> echo "Hello, world!" > hello_world.txt
+PS C:\Users\河野\TEST\git_challenge> git add hello_world.txt
+PS C:\Users\河野\TEST\git_challenge> git commit -m "hello_world.txtを追加"
+[main (root-commit) d366e23] hello_world.txtを追加
+ 1 file changed, 0 insertions(+), 0 deletions(-)
+ create mode 100644 hello_world.txt
+PS C:\Users\河野\TEST\git_challenge> echo "こんにちは、世界！" >> hello_world.txt
+
+PS C:\Users\河野\TEST\git_challenge> git add hello_world.txt
+PS C:\Users\河野\TEST\git_challenge> git commit -m "日本語を追記"
+[main 9780f9b] 日本語を追記
+ 1 file changed, 0 insertions(+), 0 deletions(-)
+PS C:\Users\河野\TEST\git_challenge> git log --oneline
+9780f9b (HEAD -> main) 日本語を追記
+d366e23 hello_world.txtを追加
+PS C:\Users\河野\TEST\git_challenge> cd ..
+PS C:\Users\河野\TEST> mkdir kadai_005
+
+
+    ディレクトリ: C:\Users\河野\TEST
+
+
+Mode                 LastWriteTime         Length Name                          
+----                 -------------         ------ ----                          
+d-----        2026/06/04     17:09                kadai_005                     
+
+
+PS C:\Users\河野\TEST> cd kadai_005
+PS C:\Users\河野\TEST\kadai_005> New-Item kadai_005.txt -ItemType File
+
+
+    ディレクトリ: C:\Users\河野\TEST\kadai_005
+
+
+Mode                 LastWriteTime         Length Name                          
+----                 -------------         ------ ----                          
+-a----        2026/06/04     17:10              0 kadai_005.txt
